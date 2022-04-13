@@ -1,0 +1,186 @@
+.main-body {
+    padding: 50px;
+    margin-top: -3%;
+}
+
+
+
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card img{
+    border-radius: 5%;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col,
+.gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.shadow-none {
+    box-shadow: none !important;
+}
+
+
+
+.titlePageControl {
+    border: 1px solid whitesmoke;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    border-radius: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: -71px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    margin-bottom: 2%;
+    width: 380px;
+}
+
+.titlePageControl p {
+    margin-top: 15px;
+    color: #6b6b6b;
+    font-size: 16px;
+}
+
+
+
+.titlePageProfile {
+    border: 5px solid whitesmoke;
+    border-radius: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    align-items: center;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Verdana;
+    height: 50px;
+}
+
+.titlePageProfile button {
+    margin-top: 3%;
+    font-family: Verdana;
+}
+
+.titlePageProfile p {
+    margin-top: 15px;
+    color: lightseagreen;
+    font-size: 20px;
+}
+
+
+.titlePageProfile span {
+    color: #000000;
+    font-size: 15px;
+    
+}
+
+
+
+.titlePageUpd {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2%;
+    align-items: center;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.titlePageUpd button {
+    margin-top: -2%;
+    margin-right: -10%;
+}
+
+.titlePageUpd p {
+    margin-top: 15px;
+    color: lightseagreen;
+    font-size: 20px;
+}
+
+
+.titlePageUpd span {
+    color: #000000;
+    font-size: 15px;
+}
+
+.modalPopUp {
+    padding-left: 80px;
+}
+
+
+@media(max-width:991px) {
+
+    .titlePageProfile {
+        height: auto;
+    }
+
+    .titlePageControl {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+
+/* For the smartphones */
+@media screen and (max-width: 460px) {
+    .modalPopUp {
+        padding-left: 0;
+        padding: 15px;
+    }
+}
+
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    .modalPopUp {
+        padding-left: 0;
+        padding: 15px;
+    }
+}
+
+

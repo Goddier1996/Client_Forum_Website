@@ -1,0 +1,43 @@
+.reg {
+    padding: 20px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+
+.titlePageRegister {
+    border: 5px solid whitesmoke;
+    border-radius: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    font-family: Verdana;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+}
+
+
+
+
+.titlePageRegister p {
+    margin-top: 15px;
+    color: lightseagreen;
+    font-size: 20px;
+}
+
+
+@media(max-width:991px) {
+
+    .titlePageRegister {
+        height: 70px;
+    }
+
+}
+
+.sub button{
+    font-family: Verdana;
+}

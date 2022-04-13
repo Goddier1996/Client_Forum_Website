@@ -1,0 +1,61 @@
+table th,
+table td {
+  text-align: center;
+  align-items: center;
+}
+
+
+
+.titlePage {
+  border: 5px solid whitesmoke;
+  border-radius: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-items: center;
+  font-family: Verdana;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.titlePage button {
+  margin-top: 3%;
+}
+
+
+.titlePage p {
+  margin-top: 15px;
+  font-size: 20px;
+  color: lightseagreen;
+}
+
+.titlePage span {
+  color: #6b6b6b;
+  font-size: 15px;
+}
+
+.userType {
+  border: 5px solid whitesmoke;
+  border-radius: 3%;
+  padding: 5px;
+  padding-left: 2%;
+  align-items: center;
+  font-size: 14px;
+  /* font-family: cursive; */
+  width: 20%;
+}
+
+
+
+@media(max-width:991px) {
+
+  .titlePage {
+    height: 70px;
+  }
+
+  .userType {
+    width: 40%;
+  }
+}

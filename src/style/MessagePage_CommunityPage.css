@@ -1,0 +1,519 @@
+/* ########################################### */
+/*            posts.html                       */
+/* ########################################### */
+
+/* posts table's head  */
+
+
+.posts-table {
+    margin-top: -1%;
+    margin-bottom: 9%;
+    padding: 50px;
+}
+
+
+.add {
+    margin-bottom: 17%;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.posts-table h6 {
+    text-decoration: none;
+    color: white;
+}
+
+.log Button {
+    margin-top: 3%;
+    background: #688cda;
+}
+
+.log h6 {
+    margin-top: 3%;
+    text-decoration: none;
+    color: white;
+
+}
+
+Button {
+    margin-bottom: 3%;
+}
+
+
+
+
+.table-head {
+    display: flex;
+}
+
+
+
+.table-head div {
+    padding: 5px;
+    margin: 2px;
+    border: 4px solid whitesmoke;
+    border-radius: 1%;
+}
+
+.table-head .status {
+    flex: 5%;
+}
+
+.table-head .subjects {
+    flex: 70%;
+}
+
+.table-head .replies {
+    flex: 7%;
+    align-items: center;
+    text-align: center;
+}
+
+.table-head .last-reply {
+    flex: 10%;
+}
+
+/* posts table's body  */
+
+.table-row {
+    display: flex;
+}
+
+.table-row .status,
+.table-row .subjects,
+.table-row .datePublish,
+.table-row .last-reply,
+.table-row .replies {
+    padding: 5px;
+    margin: 2px;
+    border: 2px solid rgb(228, 228, 228);
+    background: whitesmoke;
+    border-radius: 1%;
+    margin-bottom: 7px;
+}
+
+.status img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.table-row .status {
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.table-row .subjects {
+    flex: 70%;
+}
+
+
+
+.table-row .replies {
+    flex: 7%;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.table-row .datePublish {
+    flex: 10%;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.last-reply {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.table-row .last-reply {
+    flex: 15%;
+}
+
+/* navigation path*/
+.navigate {
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.navigate a {
+    color: #fff;
+}
+
+.navigate a:hover {
+    color: #FF0042;
+    font-weight: bolder;
+}
+
+/* Pagination*/
+
+.pagination {
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+.topic-container {
+    padding-bottom: 1%;
+}
+
+.pagination a {
+    color: #fff;
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: solid 0.5px #fff;
+}
+
+.pagination a:hover {
+    opacity: 0.5;
+}
+
+
+
+
+/* pop up add new topic */
+
+.window {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background: white;
+}
+
+.window button {
+    margin: 5%;
+}
+
+.window .boxWin {
+    position: relative;
+    height: 65vh;
+}
+
+.window .boxWin:first-child {
+    background-image: url('/src/images/x1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.AddTopicPop {
+    margin-top: 2%;
+}
+
+
+.boxWin {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.AddTopicPop input {
+    width: 100%;
+    border-radius: 10%;
+    background-color: #dadada;
+    color: rgb(0, 0, 0);
+    padding: 8px 30px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.AddTopicPop textarea {
+    width: 100%;
+    height: 20vh;
+    border-radius: 10%;
+    background-color: #dadada;
+    color: rgb(0, 0, 0);
+    padding: 8px 30px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.AddTopicPop ::placeholder {
+    font-size: 14px;
+}
+
+
+.imageTopicAdd p {
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+@media(max-width:991px) {
+
+    .window {
+        grid-template-columns: 1fr;
+    }
+
+    .AddTopicPop {
+        margin-bottom: 15%;
+    }
+
+    .imageTopicAdd p {
+        font-size: 25px;
+    }
+
+    .AddTopicPop h3 {
+        font-size: 22px;
+    }
+
+}
+
+
+
+/* ########################################### */
+/*            detail.html                      */
+/* ########################################### */
+
+.formMessage {
+    margin: 20px;
+    padding: 70px;
+}
+
+
+.head {
+    display: flex;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    border: 3px solid rgb(228, 228, 228);
+}
+
+.authors {
+    flex: 20%;
+    padding-left: 2%;
+    color: #6b6b6bd2;
+    
+}
+
+.authors img {
+    padding: 1%;
+    border-radius: 8%;
+    border: 4px solid rgb(222, 226, 226);
+}
+
+.content {
+    flex: 80%;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(228, 228, 228);
+    padding-left: 10px;
+    color: #6b6b6b;
+    border-radius: 1%;
+}
+
+.body {
+    display: flex;
+    border: 2px solid rgb(228, 228, 228);
+    background: whitesmoke;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.body .authors .username {
+    font-size: 20px;
+}
+
+
+
+.authors .date {
+    font-size: 13px;
+}
+
+.date p {
+    font-size: 12px;
+}
+
+
+
+.body .content .comment button {
+    border: none;
+    padding: 10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px #fff;
+    cursor: pointer;
+    float: right;
+}
+
+/* comment section */
+.comment-area {
+    margin-bottom: 50px;
+}
+
+.comment-area textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 40px;
+    border: 3px solid rgb(228, 228, 228);
+}
+
+.comment-area input {
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comment-area ::placeholder {
+    color: #6b6b6b;
+}
+
+.comment-area input:hover {
+    border: solid 1px #000000;
+}
+
+
+
+
+.formMessage button {
+    margin-top: -5%;
+}
+
+
+
+
+/* For the smartphones */
+@media screen and (max-width: 460px) {
+    .container .formMessage {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .formMessage {
+        margin: 20px;
+        padding: 70px;
+    }
+
+}
+
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    .container .formMessage {
+        margin: 15px;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+.titlePageMessage {
+    border: 5px solid whitesmoke;
+    border-radius: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    margin-top: -3%;
+    margin-bottom: 2%;
+    align-items: center;
+    height: 50px;
+}
+
+.titlePageMessage p {
+    color: lightseagreen;
+    font-size: 18px;
+}
+
+
+.titlePageCommunity {
+    /* background: whitesmoke url(../images/12.jpg) no-repeat center center; */
+  
+    border-radius: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    /* font-family: cursive; */
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    filter: drop-shadow(8px 8px 10px #ffffff);
+    object-fit: cover;
+    
+}
+
+.titlePageCommunity button {
+    margin-top: 44px;
+    margin-left: 35px;
+    border-radius: 5px;
+    border: 2px solid #f6f5fa;
+    font-family: Verdana;
+}
+
+
+.titlePageCommunity p {
+    margin-top: 19px;
+    font-family: Verdana;
+    color: rgb(97, 89, 89);
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.678);
+    border: 2px solid #f6f5fa;
+    width: 100%;
+    border-radius: 5px;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.titlePageCommunity span {
+    color: #6b6b6b;
+    font-size: 15px;
+}
+
+@media(max-width:991px) {
+
+    .titlePageCommunity {
+        height: 85px;
+    }
+
+    .titlePageMessage {
+        height: 85px;
+    }
+
+    .titlePageCommunity button {
+        margin-bottom: 33px;
+    }
+}
+
+
+.connectuser {
+    font-size: 18px;
+    margin-top: 3%;
+    margin-bottom: -3%;
+}
+
+.connectuser a {
+    color: lightseagreen;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+

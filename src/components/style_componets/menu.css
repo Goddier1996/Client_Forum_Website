@@ -1,0 +1,22 @@
+.linksChoise Button p {
+	margin: 1px;
+	width: auto;
+	height: 20px;
+	align-items: center;
+	font-size: 14px;
+}
+
+
+/* The company logo */
+
+.Logo h3 {
+	color: #6b6b6b;
+	font-family:'Levenim MT';
+	margin: 0;
+}
+
+
+
+.Logo h3 span {
+	color: #28a745;
+}

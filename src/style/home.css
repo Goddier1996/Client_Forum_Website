@@ -1,0 +1,41 @@
+.StyleCarousel img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+}
+
+
+
+
+.NEWS1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+
+.NEWScard img {
+    width: 100%;
+    height: 200px;
+    border-radius: 6%;
+}
+
+.NEWScard {
+    position: relative;
+}
+
+.top-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+  }
+
+
+
+
+
+
