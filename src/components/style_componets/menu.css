@@ -9,7 +9,6 @@
 .Logo img {
 	width: auto;
 	height: 50px;
-	object-fit: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
