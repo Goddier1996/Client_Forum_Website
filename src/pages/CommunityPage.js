@@ -132,7 +132,7 @@ const CommunityPage = (props) => {
                         <NavLink to={`/`}>
                             <img src={require("../images/hhh.png").default}
                                 style={{ margin: "5px", paddingBottom: "4px" }}
-                                width="37"
+                                width="auto"
                                 height="37"
                                 alt="Profile"
                             />
@@ -221,43 +221,43 @@ const CommunityPage = (props) => {
 
 
             {
-                topics.map(topic => 
+                topics.map(topic =>
 
-            <div className="table-row">
+                    <div className="table-row">
 
-                <div className="status">
-                    <img
-                        src={topic.Photo}
-                        alt="Profile" />
-                </div>
+                        <div className="status">
+                            <img
+                                src={topic.Photo}
+                                alt="Profile" />
+                        </div>
 
-                <div className="subjects">
+                        <div className="subjects">
 
-                    <NavLink to=
-                        {`/MessagePage/${topic.Serial_code}`}
-                        style={{ textDecoration: "none", color: "green", fontSize: "18px" }}>
-                        {topic.Topic_title}
-                    </NavLink>
-                    <br />
+                            <NavLink to=
+                                {`/MessagePage/${topic.Serial_code}`}
+                                style={{ textDecoration: "none", color: "green", fontSize: "17px" }}>
+                                {topic.Topic_title}
+                            </NavLink>
+                            <br />
 
-                    <span
-                        style={{ textDecoration: "none", color: "black", fontSize: "13px" }}>
-                        Started by
-                        <b> {topic.First_name} {topic.Last_name}</b>
-                    </span>
-                </div>
+                            <span
+                                style={{ textDecoration: "none", color: "black", fontSize: "13px" }}>
+                                Started by
+                                <b> {topic.First_name} {topic.Last_name}</b>
+                            </span>
+                        </div>
 
-                <div className="replies">
-                    {topic.Count_Comments}
-                </div>
+                        <div className="replies">
+                            {topic.Count_Comments}
+                        </div>
 
-                <div className="datePublish">
-                    {topic.Date_published}
-                </div>
+                        <div className="datePublish">
+                            {topic.Date_published}
+                        </div>
 
-            </div>
-            )
-            
+                    </div>
+                )
+
             }
 
 

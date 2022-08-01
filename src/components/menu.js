@@ -77,7 +77,7 @@ const Menu = () => {
                 className="d-block w-100"
                 src={require("../images/Logo.png").default}
                 style={{
-                  width: '58px',
+                  width: 'auto',
                   height: '58px'
                 }}
               />
@@ -137,7 +137,7 @@ const Menu = () => {
                 className="d-block w-100"
                 src={require("../images/Logo.png").default}
                 style={{
-                  width: '58px',
+                  width: 'auto',
                   height: '58px'
                 }}
               />

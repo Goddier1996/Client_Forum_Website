@@ -263,7 +263,9 @@ Button {
     color: white;
 }
 
-
+.table-head {
+    font-size: 15px;
+}
 
 @media(max-width:991px) {
 
@@ -283,7 +285,14 @@ Button {
         font-size: 22px;
     }
 
+    .table-head {
+        font-size: 13px;
+    }
+
+
 }
+
+
 
 
 
@@ -310,7 +319,6 @@ Button {
     flex: 20%;
     padding-left: 2%;
     color: #6b6b6bd2;
-    
 }
 
 .authors img {
@@ -446,7 +454,7 @@ Button {
 
 .titlePageCommunity {
     /* background: whitesmoke url(../images/12.jpg) no-repeat center center; */
-  
+
     border-radius: 1%;
     padding-left: 2%;
     padding-right: 2%;
@@ -459,7 +467,7 @@ Button {
     height: 80px;
     filter: drop-shadow(8px 8px 10px #ffffff);
     object-fit: cover;
-    
+
 }
 
 .titlePageCommunity button {
@@ -488,18 +496,37 @@ Button {
     font-size: 15px;
 }
 
+
+
 @media(max-width:991px) {
 
     .titlePageCommunity {
         height: 85px;
     }
 
+    .titlePageCommunity p {
+        font-size: 14px;
+    }
+
     .titlePageMessage {
         height: 85px;
     }
 
+    .titlePageMessage p {
+        font-size: 14px;
+    }
+
     .titlePageCommunity button {
         margin-bottom: 33px;
+        font-size: 14px;
+    }
+
+    .content{
+        font-size: 14px;
+    }
+
+    .username{
+        font-size: 8px;
     }
 }
 
@@ -515,5 +542,3 @@ Button {
     font-weight: bold;
     text-decoration: none;
 }
-
-
