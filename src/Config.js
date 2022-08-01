@@ -3,7 +3,7 @@ export const Config = {
 
 
     API: {
-        BASE: "http://localhost:5000",
+        BASE: "https://servforum.herokuapp.com",
     }
 
 

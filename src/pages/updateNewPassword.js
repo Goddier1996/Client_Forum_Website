@@ -32,9 +32,6 @@ const UpdateNewPassword = (props) => {
 
 
 
-
-
-
        // טיפול בשגיאות בנסיון לשנות לסיסמא חדשה
        const checkPasswordInput = async () => {
 

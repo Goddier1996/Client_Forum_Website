@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.82d6e3dc.chunk.css",
+    "main.js": "/static/js/main.f85c91f5.chunk.js",
+    "main.js.map": "/static/js/main.f85c91f5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6bad8864.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6bad8864.js.map",
+    "static/css/2.c0e8d3f0.chunk.css": "/static/css/2.c0e8d3f0.chunk.css",
+    "static/js/2.f4be5af8.chunk.js": "/static/js/2.f4be5af8.chunk.js",
+    "static/js/2.f4be5af8.chunk.js.map": "/static/js/2.f4be5af8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.c0e8d3f0.chunk.css.map": "/static/css/2.c0e8d3f0.chunk.css.map",
+    "static/css/main.82d6e3dc.chunk.css.map": "/static/css/main.82d6e3dc.chunk.css.map",
+    "static/js/2.f4be5af8.chunk.js.LICENSE.txt": "/static/js/2.f4be5af8.chunk.js.LICENSE.txt",
+    "static/media/login_page.css": "/static/media/forget4.d3a9bd87.JPG",
+    "static/media/Instagram.png": "/static/media/Instagram.56cf87c4.png",
+    "static/media/Logo.png": "/static/media/Logo.5bed3529.png",
+    "static/media/Twitter.png": "/static/media/Twitter.c5b06f8c.png",
+    "static/media/f.jpg": "/static/media/f.ad6c7bc1.jpg",
+    "static/media/hhh.png": "/static/media/hhh.e298d89b.png",
+    "static/media/homeee.png": "/static/media/homeee.d2682374.png",
+    "static/media/user1.png": "/static/media/user1.96156881.png",
+    "static/media/footer.css": "/static/media/white.a925cb73.jpg",
+    "static/media/MessagePage_CommunityPage.css": "/static/media/x1.c521c5e4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6bad8864.js",
+    "static/css/2.c0e8d3f0.chunk.css",
+    "static/js/2.f4be5af8.chunk.js",
+    "static/css/main.82d6e3dc.chunk.css",
+    "static/js/main.f85c91f5.chunk.js"
+  ]
+}
