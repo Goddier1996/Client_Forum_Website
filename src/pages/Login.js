@@ -205,7 +205,7 @@ const Login = (props) => {
               />
 
 
-              <a onClick={togglePassword}><img src="https://img.icons8.com/ios-glyphs/30/000000/visible--v2.png"/></a>
+              <a onClick={togglePassword}><img src="https://img.icons8.com/ios-glyphs/30/000000/visible--v2.png" /></a>
             </div>
 
 
@@ -223,7 +223,8 @@ const Login = (props) => {
 
             <a href="#" className="forget" onClick={handleShow}
               style={{ textDecoration: "none", color: "black", borderBottom: "1px solid black", fontWeight: "bold", fontSize: "14px", }}
-            >Password Recovery</a>
+            >Password Recovery
+            </a>
 
 
 

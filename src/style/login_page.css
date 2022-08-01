@@ -183,6 +183,12 @@
     .log h3 {
         font-size: 22px;
     }
+
+    .hidePass img {
+        width: auto;
+        height: 5vh;
+    }
+
 }
 
 
@@ -214,14 +220,4 @@
     width: auto;
     height: 3vh;
 
-}
-
-
-
-@media(max-width:500px) {
-    .hidePass img {
-        width: auto;
-        height: 5vh;
-
-    }
 }
