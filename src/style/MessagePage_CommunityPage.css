@@ -521,13 +521,39 @@ Button {
         font-size: 14px;
     }
 
-    .content{
+    .content {
         font-size: 14px;
     }
 
-    .username{
-        font-size: 8px;
+    .username {
+        font-size: 2px;
     }
+
+    .table-row .datePublish {
+        font-size: 11px;
+    }
+
+    .table-row .replies {
+        font-size: 12px;
+    }
+
+    .table-row .replies {
+        padding: 19px;
+
+    }
+
+
+    .formMessage {
+        padding: 10px;
+    }
+
+    .username img,
+    .authors img {
+        width: 80px;
+        height: auto;
+    }
+
+
 }
 
 

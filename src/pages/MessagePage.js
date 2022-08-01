@@ -278,7 +278,7 @@ const MessagePage = (props) => {
                                 </NavLink>
 
                                 <div className="username"
-                                    style={{ textDecoration: "none", color: "#28a745", fontSize: "17px" }}>
+                                    style={{ textDecoration: "none", color: "#28a745", fontSize: "14px" }}>
                                     {topic.First_name} {topic.Last_name}, {topic.City}</div>
 
                                 <div className="date"
@@ -306,7 +306,7 @@ const MessagePage = (props) => {
                                     <img src={comment.Photo} alt="" height="140px" width="110" />
                                 </NavLink>
                                 <div className="username"
-                                    style={{ textDecoration: "none", color: "#6b6b6b", fontSize: "15px" }}>
+                                    style={{ textDecoration: "none", color: "#6b6b6b", fontSize: "14px" }}>
                                     {comment.First_name} {comment.Last_name}, {comment.City} </div>
 
                                 <div className="date">Date Publish: <p>{comment.Date_published}</p></div>

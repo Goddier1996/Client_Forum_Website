@@ -27,7 +27,7 @@ const Home = (props) => {
   }, [])
 
 
-  
+
 
   return (
 
