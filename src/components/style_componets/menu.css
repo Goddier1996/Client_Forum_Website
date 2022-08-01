@@ -7,23 +7,17 @@
 }
 
 .Logo img {
-	width: 100%;
-	height: 50px;
+	height: 60px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 
-/* The company logo */
-
-.Logo h3 {
-	color: #6b6b6b;
-	font-family: 'Levenim MT';
-	margin: 0;
-}
 
 
+@media(max-width:991px) {
 
-.Logo h3 span {
-	color: #28a745;
+	.Logo img {
+		height: auto;
+	}
 }

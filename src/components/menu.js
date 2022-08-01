@@ -132,10 +132,6 @@ const Menu = () => {
               <img
                 className="d-block w-100"
                 src={require("../images/Logo.png").default}
-                style={{
-                  width: 'auto',
-                  height: '58px'
-                }}
               />
             </Link>
           </Navbar.Brand>
