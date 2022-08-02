@@ -18,6 +18,9 @@
 @media(max-width:991px) {
 
 	.Logo img {
-		height: auto;
+		height: 50px;
+		width: 20px;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 }
