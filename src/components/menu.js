@@ -74,7 +74,6 @@ const Menu = () => {
           <Navbar.Brand className="Logo">
             <Link to="/" >
               <img
-                className="d-block w-100"
                 src={require("../images/Logo.png").default}
               />
             </Link>
@@ -130,7 +129,6 @@ const Menu = () => {
           <Navbar.Brand className="Logo">
             <Link to="/" style={{ textDecoration: "none" }}>
               <img
-                className="d-block w-100"
                 src={require("../images/Logo.png").default}
               />
             </Link>
