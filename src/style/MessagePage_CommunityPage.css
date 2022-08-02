@@ -289,6 +289,10 @@ Button {
         font-size: 13px;
     }
 
+    .status img {
+        width: 35px;
+        height: 35px;
+    }
 
 }
 
@@ -453,13 +457,10 @@ Button {
 
 
 .titlePageCommunity {
-    /* background: whitesmoke url(../images/12.jpg) no-repeat center center; */
-
     border-radius: 1%;
     padding-left: 2%;
     padding-right: 2%;
     align-items: center;
-    /* font-family: cursive; */
     margin-bottom: 2%;
     display: flex;
     justify-content: space-between;
@@ -467,7 +468,6 @@ Button {
     height: 80px;
     filter: drop-shadow(8px 8px 10px #ffffff);
     object-fit: cover;
-
 }
 
 .titlePageCommunity button {
@@ -502,10 +502,15 @@ Button {
 
     .titlePageCommunity {
         height: 85px;
+
     }
 
     .titlePageCommunity p {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .titlePageCommunity img {
+        height: 30px;
     }
 
     .titlePageMessage {
@@ -517,8 +522,9 @@ Button {
     }
 
     .titlePageCommunity button {
-        margin-bottom: 33px;
-        font-size: 14px;
+        font-size: 11px;
+        border-radius: 2%;
+        margin-bottom: 35px;
     }
 
     .content {

@@ -145,7 +145,7 @@ const CommunityPage = (props) => {
 
                     <Button variant="success" size="sm"
                         onClick={handleShow}
-                        style={{ textDecoration: "none", color: "white", fontSize: "14px" }}>
+                        style={{ textDecoration: "none", color: "white" }}>
                         Add New Cluster
                     </Button>
                 </div>
@@ -235,7 +235,7 @@ const CommunityPage = (props) => {
 
                             <NavLink to=
                                 {`/MessagePage/${topic.Serial_code}`}
-                                style={{ textDecoration: "none", color: "green", fontSize: "17px" }}>
+                                style={{ textDecoration: "none", color: "green", fontSize: "15px" }}>
                                 {topic.Topic_title}
                             </NavLink>
                             <br />
