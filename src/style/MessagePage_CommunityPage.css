@@ -544,7 +544,6 @@ Button {
 
     .table-row .replies {
         padding: 19px;
-
     }
 
 
@@ -558,7 +557,10 @@ Button {
         height: auto;
     }
 
-
+    .subjects,
+    .status {
+        text-align: center;
+    }
 }
 
 
