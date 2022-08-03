@@ -58,4 +58,67 @@ table td {
   .userType {
     width: 40%;
   }
+
+
+
+
+
+  .userss table caption,
+  .catergoriess table caption,
+  .topicss table caption,
+  .commentss table caption {
+    font-size: 1.3em;
+  }
+
+  .userss table thead,
+  .catergoriess table thead,
+  .topicss table thead,
+  .commentss table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
+
+  .userss table tr,
+  .catergoriess table tr,
+  .topicss table tr,
+  .commentss table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    font-size: 15px;
+
+  }
+
+  .userss table td,
+  .catergoriess table td,
+  .topicss table td,
+  .commentss table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .userss table td::before,
+  .catergoriess table td::before,
+  .topicss table td::before,
+  .commentss table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .userss table td:last-child,
+  .catergoriess table td:last-child,
+  .topicss table td:last-child,
+  .commentss table td:last-child {
+    border-bottom: 0;
+  }
+
 }

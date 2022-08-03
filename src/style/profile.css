@@ -19,7 +19,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.card img{
+.card img {
     border-radius: 5%;
 }
 
@@ -114,7 +114,7 @@
 .titlePageProfile span {
     color: #000000;
     font-size: 15px;
-    
+
 }
 
 
@@ -184,3 +184,62 @@
 }
 
 
+@media(max-width:991px) {
+
+
+
+    .commentss table caption,
+    .topics table caption {
+        font-size: 1.3em;
+    }
+
+    .commentss table thead,
+    .topics table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+    }
+
+    .commentss table tr,
+    .topics table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+        font-size: 15px;
+
+    }
+
+    .commentss table td,
+    .topics table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .commentss table td::before,
+    .topics table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .commentss table td:last-child,
+    .topics table td:last-child {
+        border-bottom: 0;
+    }
+
+
+
+    .titlePageProfile p {
+        margin-top: 15px;
+        color: lightseagreen;
+        font-size: 14px;
+    }
+
+}

@@ -32,13 +32,13 @@ const Login = (props) => {
   // Initialize a boolean state
   const [passwordShown, setPasswordShown] = useState(false);
 
+
   // פונקציה המאפשרת להשפיע על ההצגה של הסיסמא כטקסט או נקודות
   const togglePassword = () => {
     // When the handler is invoked
     // inverse the boolean state of passwordShown
     setPasswordShown(!passwordShown);
   };
-
 
 
 
@@ -171,6 +171,47 @@ const Login = (props) => {
 
 
 
+  //connect demo user
+  const loginUserDemo = async () => {
+
+    try {
+      let user = {
+        Email: "User@gmail.com",
+        Password: "1111"
+      }
+
+      let res = await fetch(API.USERS.LOGIN, {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(user)
+      });
+
+
+      let data = await res.json() // ממיר את הres לאובייקט json
+      let u = JSON.parse(sessionStorage.getItem("user"));
+
+
+      if (u != null || u != undefined) { // אם יש משתמש מחובר אז לא ניתן לבצע התחברות חדשה
+        swal("Stop", "You need to logout first!", "warning");
+        return;
+      }
+
+
+      // אם המשתמש לא מחובר - ניתן לבצע התחברות - לפי סוג משתמש
+      if (data.UserType_code == 1) { // מעבר לדף פרופיל של משתמש ספציפי
+        sessionStorage.setItem("user", JSON.stringify(data))
+        history.push(`/Profile/${data.User_code}`);
+        window.location.reload(false); // רענון דף
+      }
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+
 
 
   return (
@@ -213,6 +254,18 @@ const Login = (props) => {
               Login
             </Button>
 
+            <br />
+
+
+
+            <a href="#" className="forget" onClick={loginUserDemo}
+              style={{ textDecoration: "none", color: "black", fontWeight: "600", fontSize: "13px", }}
+            >Connect Demo User
+            </a>
+
+
+            <br />
+            <br />
 
 
             <Form.Text className="text-muted">
@@ -222,7 +275,7 @@ const Login = (props) => {
 
 
             <a href="#" className="forget" onClick={handleShow}
-              style={{ textDecoration: "none", color: "black", borderBottom: "1px solid black", fontWeight: "bold", fontSize: "14px", }}
+              style={{ textDecoration: "none", color: "black", fontWeight: "bold", fontSize: "14px", }}
             >Password Recovery
             </a>
 

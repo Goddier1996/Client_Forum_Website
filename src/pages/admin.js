@@ -293,7 +293,9 @@ const Admin = (props) => {
 
 
       <Tabs defaultActiveKey="Users" transition={false} id="noanim-tab-example">
-        <Tab eventKey="Users" title="Users">
+
+
+        <Tab eventKey="Users" title="Users" className='userss'>
           <Table striped bordered hover size="sm" style={{ fontSize: "13px" }}>
             <thead>
               <tr>
@@ -358,7 +360,7 @@ const Admin = (props) => {
 
 
 
-        <Tab eventKey="Catergories" title="Catergories">
+        <Tab eventKey="Catergories" title="Catergories" className='catergoriess'>
           <Table striped bordered hover size="sm" style={{ fontSize: "13px", marginBottom: "50px" }}>
             <thead>
               <tr>
@@ -406,7 +408,7 @@ const Admin = (props) => {
         </Tab>
 
 
-        <Tab eventKey="Topics" title="Topics">
+        <Tab eventKey="Topics" title="Topics" className='topicss'>
           <Table striped bordered hover size="sm" style={{ fontSize: "13px", marginBottom: "176px" }}>
             <thead>
               <tr>
@@ -463,7 +465,7 @@ const Admin = (props) => {
 
 
 
-        <Tab eventKey="Comments" title="Comments">
+        <Tab eventKey="Comments" title="Comments" className='commentss'>
           <Table striped bordered hover size="sm" style={{ fontSize: "13px", marginBottom: "270px" }}>
             <thead>
               <tr>

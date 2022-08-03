@@ -519,17 +519,18 @@ const Profile = (props) => {
                 </div>
 
                 <Tabs defaultActiveKey="Topics" transition={false} id="noanim-tab-example">
-                    <Tab eventKey="Topics" title="Topics">
+
+                    <Tab eventKey="Topics" title="Topics" className='topics'>
                         <Table striped bordered hover size="sm" style={{ fontSize: "13px" }}>
                             <thead>
                                 <tr>
                                     <th style={{ width: "19px" }}>#</th>
-                                    <th style={{ width: "30px" }}>Serial code</th>
-                                    <th style={{ width: "30px" }}>Category code</th>
+                                    {/* <th style={{ width: "30px" }}>Serial code</th>
+                                    <th style={{ width: "30px" }}>Category code</th> */}
                                     <th style={{ width: "50px" }}>Topic title</th>
                                     <th style={{ width: "210px" }}>Topic text</th>
                                     <th style={{ width: "70px" }}>Date published</th>
-                                    <th style={{ width: "70px" }}>Publish by-user code</th>
+                                    {/* <th style={{ width: "70px" }}>Publish by-user code</th> */}
                                     <th style={{ width: "10px" }}></th>
                                     <th style={{ width: "10px" }}></th>
                                 </tr>
@@ -539,12 +540,12 @@ const Profile = (props) => {
                                 <tbody>
                                     <tr>
                                         <td>{iTopics++}</td>
-                                        <td>{topic.Serial_code}</td>
-                                        <td>{topic.Category_code}</td>
+                                        {/* <td>{topic.Serial_code}</td>
+                                        <td>{topic.Category_code}</td> */}
                                         <td><Link onClick={() => toMessagePage(topic.Serial_code)} style={{ textDecoration: "none", color: "#28a745", fontWeight: "bold" }}>{topic.Topic_title}</Link></td>
                                         <td>{topic.Topic_text}</td>
                                         <td>{topic.Date_published}</td>
-                                        <td>{topic.Publish_by}</td>
+                                        {/* <td>{topic.Publish_by}</td> */}
 
                                         <td><Button variant="primary" size="sm" onClick={() => ToUpdateTopicPage(topic.Serial_code)}>Update</Button></td>
                                         <td><Button variant="danger" size="sm" onClick={() => DeleteTopic(topic.Serial_code)}>Delete</Button></td>
@@ -555,15 +556,15 @@ const Profile = (props) => {
                     </Tab>
 
 
-                    <Tab eventKey="Comments" title="Comments">
+                    <Tab eventKey="Comments" title="Comments" className='commentss'>
                         <Table striped bordered hover size="sm" style={{ fontSize: "13px" }}>
                             <thead>
                                 <tr>
                                     <th style={{ width: "19px" }}>#</th>
-                                    <th style={{ width: "30px" }}>Serial code</th>
-                                    <th style={{ width: "20px" }}>Topic number</th>
+                                    {/* <th style={{ width: "30px" }}>Serial code</th>
+                                    <th style={{ width: "20px" }}>Topic number</th> */}
                                     <th style={{ width: "230px" }}>Comment</th>
-                                    <th style={{ width: "60px" }}>Publish by-user code</th>
+                                    {/* <th style={{ width: "60px" }}>Publish by-user code</th> */}
                                     <th style={{ width: "40px" }}></th>
                                     <th style={{ width: "30px" }}></th>
                                 </tr>
@@ -573,10 +574,10 @@ const Profile = (props) => {
                                 <tbody>
                                     <tr>
                                         <td>{iComments++}</td>
-                                        <td>{comment.Serial_code}</td>
-                                        <td>{comment.Topic_number}</td>
+                                        {/* <td>{comment.Serial_code}</td>
+                                        <td>{comment.Topic_number}</td> */}
                                         <td>{comment.Comment}</td>
-                                        <td>{comment.Publish_by}</td>
+                                        {/* <td>{comment.Publish_by}</td> */}
                                         <td></td>
                                         <td><Button variant="danger" size="sm" onClick={() => DeleteComment(comment.Serial_code)}>Delete</Button></td>
                                     </tr>
@@ -839,17 +840,19 @@ const Profile = (props) => {
                 </div>
 
                 <Tabs defaultActiveKey="Topics" transition={false} id="noanim-tab-example">
-                    <Tab eventKey="Topics" title="Topics">
+
+
+                    <Tab eventKey="Topics" title="Topics" className='topics'>
                         <Table striped bordered hover size="sm" style={{ fontSize: "13px" }}>
                             <thead>
                                 <tr>
                                     <th style={{ width: "19px" }}>#</th>
-                                    <th style={{ width: "30px" }}>Serial code</th>
-                                    <th style={{ width: "30px" }}>Category code</th>
+                                    {/* <th style={{ width: "30px" }}>Serial code</th> */}
+                                    {/* <th style={{ width: "30px" }}>Category code</th> */}
                                     <th style={{ width: "50px" }}>Topic title</th>
                                     <th style={{ width: "210px" }}>Topic text</th>
                                     <th style={{ width: "70px" }}>Date published</th>
-                                    <th style={{ width: "70px" }}>Publish by-user code</th>
+                                    {/* <th style={{ width: "70px" }}>Publish by-user code</th> */}
                                     <th style={{ width: "10px" }}></th>
                                     <th style={{ width: "10px" }}></th>
                                 </tr>
@@ -859,12 +862,12 @@ const Profile = (props) => {
                                 <tbody>
                                     <tr>
                                         <td>{iTopics++}</td>
-                                        <td>{topic.Serial_code}</td>
-                                        <td>{topic.Category_code}</td>
+                                        {/* <td>{topic.Serial_code}</td> */}
+                                        {/* <td>{topic.Category_code}</td> */}
                                         <td><Link onClick={() => toMessagePage(topic.Serial_code)} style={{ textDecoration: "none", color: "#28a745", fontWeight: "bold" }}>{topic.Topic_title}</Link></td>
                                         <td>{topic.Topic_text}</td>
                                         <td>{topic.Date_published}</td>
-                                        <td>{topic.Publish_by}</td>
+                                        {/* <td>{topic.Publish_by}</td> */}
                                         <td><Button variant="primary" size="sm" onClick={() => ToUpdateTopicPage(topic.Serial_code)}>Update</Button></td>
                                         <td><Button variant="danger" size="sm" onClick={() => DeleteTopic(topic.Serial_code)}>Delete</Button></td>
                                     </tr>
@@ -873,15 +876,14 @@ const Profile = (props) => {
                         </Table>
                     </Tab>
 
-                    <Tab eventKey="Comments" title="Comments">
+                    <Tab eventKey="Comments" title="Comments" className='commentss'>
                         <Table striped bordered hover size="sm" style={{ fontSize: "13px" }}>
                             <thead>
                                 <tr>
                                     <th style={{ width: "19px" }}>#</th>
-                                    <th style={{ width: "30px" }}>Serial code</th>
-                                    <th style={{ width: "20px" }}>Topic number</th>
+                                    {/* <th style={{ width: "30px" }}>Serial code</th>
+                                    <th style={{ width: "20px" }}>Topic number</th> */}
                                     <th style={{ width: "230px" }}>Comment</th>
-                                    <th style={{ width: "60px" }}>Publish by-user code</th>
                                     <th style={{ width: "30px" }}></th>
 
                                 </tr>
@@ -891,10 +893,9 @@ const Profile = (props) => {
                                 <tbody>
                                     <tr>
                                         <td>{iComments++}</td>
-                                        <td>{comment.Serial_code}</td>
-                                        <td>{comment.Topic_number}</td>
+                                        {/* <td>{comment.Serial_code}</td>
+                                        <td>{comment.Topic_number}</td> */}
                                         <td>{comment.Comment}</td>
-                                        <td>{comment.Publish_by}</td>
                                         <td><Button variant="danger" size="sm" onClick={() => DeleteComment(comment.Serial_code)}>Delete</Button></td>
                                     </tr>
                                 </tbody>

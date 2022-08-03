@@ -502,6 +502,10 @@ Button {
 
     .titlePageCommunity {
         height: 85px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
     .titlePageCommunity p {
