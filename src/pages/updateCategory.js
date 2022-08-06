@@ -8,7 +8,7 @@ import swal from 'sweetalert';
 
 
 
-const UpdateCategory = (props) => {
+const UpdateCategory = () => {
 
     const history = useHistory()
 

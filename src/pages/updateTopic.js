@@ -7,7 +7,7 @@ import React from 'react';
 import swal from 'sweetalert';
 
 
-const UpdateTopic = (props) => {
+const UpdateTopic = () => {
 
     const history = useHistory()
 

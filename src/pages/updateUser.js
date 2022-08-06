@@ -8,7 +8,7 @@ import swal from 'sweetalert';
 
 
 // עדכון פרטי משתמש בדף אדמין בלבד
-const UpdateUser = (props) => {
+const UpdateUser = () => {
 
     const history = useHistory()
 

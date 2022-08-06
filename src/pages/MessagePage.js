@@ -8,7 +8,7 @@ import swal from 'sweetalert';
 
 
 
-const MessagePage = (props) => {
+const MessagePage = () => {
 
     let history = useHistory();
 

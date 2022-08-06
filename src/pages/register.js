@@ -6,7 +6,8 @@ import swal from 'sweetalert';
 import { useHistory } from 'react-router-dom';
 
 
-const Register = (props) => {
+const Register = () => {
+  
   // הגדרת משתנים עבור טופס הרשמה
   const history = useHistory()
 

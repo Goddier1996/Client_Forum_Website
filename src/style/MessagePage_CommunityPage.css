@@ -35,14 +35,11 @@
     margin-top: 3%;
     text-decoration: none;
     color: white;
-
 }
 
 Button {
     margin-bottom: 3%;
 }
-
-
 
 
 .table-head {
@@ -413,6 +410,7 @@ Button {
 
 /* For the smartphones */
 @media screen and (max-width: 460px) {
+
     .container .formMessage {
         margin: 10px;
         padding: 10px;
@@ -422,11 +420,11 @@ Button {
         margin: 20px;
         padding: 70px;
     }
-
 }
 
 /* For the tablets */
 @media screen and (min-width: 460px) and (max-width: 1024px) {
+
     .container .formMessage {
         margin: 15px;
         padding: 15px;
@@ -475,7 +473,6 @@ Button {
     margin-left: 35px;
     border-radius: 5px;
     border: 2px solid #f6f5fa;
-    font-family: Verdana;
 }
 
 

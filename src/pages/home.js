@@ -6,7 +6,9 @@ import '../style/home.css';
 
 
 
-const Home = (props) => {
+const Home = () => {
+
+
 
   const [categories, SetCategories] = useState([])
 
@@ -20,6 +22,7 @@ const Home = (props) => {
   }
 
 
+  
   useEffect(() => {
 
     LoadCategories();
@@ -40,9 +43,7 @@ const Home = (props) => {
         />
       </div>
 
-
       <br></br>
-
 
       <CardColumns>
 
@@ -59,7 +60,6 @@ const Home = (props) => {
                     borderColor: "white",
                     background: "#00000082",
                     borderRadius: "8px 0px",
-                    borderTopLeftRadius: "14px",
                     top: "0px",
                     left: "0px",
                     fontSize: "25px",
@@ -68,7 +68,6 @@ const Home = (props) => {
                     position: "absolute",
                     padding: "4px",
                     textShadow: "1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000",
-                    fontFamily: "fantasy"
                   }}
                 >{category.Name_category}</NavLink>
               </div>

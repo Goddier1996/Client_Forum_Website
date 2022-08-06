@@ -8,7 +8,7 @@ import swal from 'sweetalert';
 
 
 
-const UpdateNewPassword = (props) => {
+const UpdateNewPassword = () => {
 
     const history = useHistory()
 

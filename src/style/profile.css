@@ -16,7 +16,6 @@
     background-clip: border-box;
     border: 0 solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card img {
@@ -101,7 +100,6 @@
 
 .titlePageProfile button {
     margin-top: 3%;
-    font-family: Verdana;
 }
 
 .titlePageProfile p {
@@ -114,9 +112,7 @@
 .titlePageProfile span {
     color: #000000;
     font-size: 15px;
-
 }
-
 
 
 .titlePageUpd {
@@ -187,7 +183,6 @@
 @media(max-width:991px) {
 
 
-
     .commentss table caption,
     .topics table caption {
         font-size: 1.3em;
@@ -241,5 +236,4 @@
         color: lightseagreen;
         font-size: 14px;
     }
-
 }

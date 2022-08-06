@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 
 
-const UserInfo = (props) => {
+const UserInfo = () => {
 
     const [users, SetUsers] = useState([])
 
@@ -46,11 +46,6 @@ const UserInfo = (props) => {
                 <br></br>
                 <br></br>
                 <br></br>
-          
-
-
-
-
 
                 <div className="main-body">
 
@@ -61,7 +56,7 @@ const UserInfo = (props) => {
                                 <div className="card-body">
                                     <div className="d-flex flex-column align-items-center text-center">
                                         <img src={user.Photo} width="200" />
-                                
+
                                     </div>
                                 </div>
                             </div>
@@ -117,11 +112,7 @@ const UserInfo = (props) => {
                 <br></br>
                 <br></br>
                 <br></br>
-
-
             </div>
-
-
         )
     );
 

@@ -20,8 +20,6 @@
 
 
 
-
-
 /* pop up New Password - Id */
 
 .window1 {
@@ -119,16 +117,12 @@
     .AddTopicPop h3 {
         font-size: 22px;
     }
-
 }
-
-
 
 
 
 .log h3 {
     margin-bottom: 6%;
-    font-family: Verdana;
 }
 
 
@@ -188,19 +182,13 @@
         width: auto;
         height: 5vh;
     }
-
 }
-
-
-
 
 
 .text-muted {
     margin-bottom: 3%;
     font-family: Verdana;
 }
-
-
 
 
 
@@ -213,11 +201,9 @@
     right: 15%;
     top: 30%;
     background: none;
-
 }
 
 .hidePass img {
     width: auto;
     height: 3vh;
-
 }

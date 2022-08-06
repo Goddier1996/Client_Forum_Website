@@ -12,7 +12,6 @@ table td {
   padding-left: 2%;
   padding-right: 2%;
   align-items: center;
-  font-family: Verdana;
   margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
@@ -43,7 +42,6 @@ table td {
   padding-left: 2%;
   align-items: center;
   font-size: 14px;
-  /* font-family: cursive; */
   width: 20%;
 }
 
@@ -58,9 +56,6 @@ table td {
   .userType {
     width: 40%;
   }
-
-
-
 
 
   .userss table caption,
@@ -120,5 +115,4 @@ table td {
   .commentss table td:last-child {
     border-bottom: 0;
   }
-
 }

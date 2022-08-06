@@ -10,7 +10,7 @@ import Modal from 'react-bootstrap/Modal'
 
 
 
-const Login = (props) => {
+const Login = () => {
 
   const history = useHistory()
 
@@ -59,6 +59,7 @@ const Login = (props) => {
   }
 
 
+  
   // אם השדה ריק id טיפול בשגיאה בהכנסת 
   const checkIdForget = async () => {
 

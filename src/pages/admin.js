@@ -7,7 +7,7 @@ import swal from 'sweetalert';
 
 
 
-const Admin = (props) => {
+const Admin = () => {
 
   let history = useHistory();
 
@@ -46,6 +46,7 @@ const Admin = (props) => {
 
 
 
+
   const LoadCatergories = async () => {
 
     let res = await fetch(API.CATEGORIES.GET, { method: 'GET' });
@@ -53,6 +54,7 @@ const Admin = (props) => {
 
     setCatergories(data);
   }
+
 
 
 
@@ -129,17 +131,23 @@ const Admin = (props) => {
     window.location.reload(false); // רענון דף
   }
 
+
+
   const DeleteCategory = async (Id) => {
 
     let res = await fetch(`${API.CATEGORIES.GET}/delete/${Id}`, { method: 'DELETE' });
     window.location.reload(false); // רענון דף
   }
 
+
+
   const DeleteTopic = async (Id) => {
 
     let res = await fetch(`${API.TOPICS.GET}/delete/${Id}`, { method: 'DELETE' });
     window.location.reload(false); // רענון דף
   }
+
+
 
   const DeleteComment = async (Id) => {
 
@@ -153,6 +161,8 @@ const Admin = (props) => {
   const ToUpdateUserPage = async (x) => {
     history.push(`/UpdateUser/${x}`);
   }
+
+
 
   const ToUpdateCategoryPage = async (x) => {
     history.push(`/UpdateCategory/${x}`);
@@ -170,17 +180,23 @@ const Admin = (props) => {
     window.location.reload(false); // רענון דף
   }
 
+
+
   const ReactivateCategories = async (Id) => {
 
     let res = await fetch(`${API.CATEGORIES.GET}/reactivate/${Id}`, { method: 'PUT' });
     window.location.reload(false); // רענון דף
   }
 
+
+  
   const ReactivateTopics = async (Id) => {
 
     let res = await fetch(`${API.TOPICS.GET}/reactivate/${Id}`, { method: 'PUT' });
     window.location.reload(false); // רענון דף
   }
+
+
 
   const ReactivateComments = async (Id) => {
 
@@ -556,6 +572,7 @@ const Admin = (props) => {
       </Tabs>
     </div>
   );
+  
 }
 
 export default Admin;

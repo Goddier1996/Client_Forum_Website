@@ -9,7 +9,7 @@ import swal from 'sweetalert';
 
 
 
-const Profile = (props) => {
+const Profile = () => {
 
     let history = useHistory();
 

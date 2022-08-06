@@ -10,7 +10,7 @@ import swal from 'sweetalert';
 
 
 
-const CommunityPage = (props) => {
+const CommunityPage = () => {
 
 
     // for popup add topic close or open window
