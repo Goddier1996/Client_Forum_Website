@@ -31,7 +31,7 @@ const Home = () => {
     Swal.fire({
       background: 'none',
       showConfirmButton: false,
-      timer: 10000,
+      timer: 15000,
       html: '<div class="popUpHome"> <h1>Welcome to Community Forum<h1> <p>( please wait connect to server )</p>  <img src="https://i.pinimg.com/originals/e3/1b/75/e31b752875679b64fce009922f9f0dda.gif"> </div>'
     })
 
