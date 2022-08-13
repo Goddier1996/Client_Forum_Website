@@ -42,3 +42,28 @@
     top: 0px;
     left: 0px;
 }
+
+
+.popUpHome h1 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popUpHome p {
+    color: rgba(255, 255, 255, 0.908);
+    font-size: 13px;
+}
+
+.popUpHome img {
+    border-radius: 20%;
+    width: 300px;
+}
+
+
+@media(max-width:991px) {
+
+    .popUpHome h1 {
+        font-size: 23px;
+    }
+}
