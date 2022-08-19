@@ -199,9 +199,13 @@ const CommunityPage = () => {
 
                             <br></br>
 
-                            <Button variant="success" type="addTopic" onClick={checkTopic}
-                                style={{ fontFamily: "Verdana" }} >
+
+                            <Button variant="success" type="addTopic" onClick={checkTopic} >
                                 Add New Topic
+                            </Button>
+
+                            <Button variant="danger" onClick={handleClose}>
+                                Close
                             </Button>
 
                         </div>

@@ -95,7 +95,7 @@ const Menu = () => {
 
               <div className="linksChoise">
 
-                <Button style={{ margin: "5px" }} variant="primary"><a href="https://www.facebook.com/" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><p>Facebook</p></a></Button>{' '}
+                {/* <Button style={{ margin: "5px" }} variant="primary"><a href="https://www.facebook.com/" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><p>Facebook</p></a></Button>{' '} */}
 
                 <Button style={{ margin: "5px" }} variant="outline-success"><Link to="/Login" style={{ textDecoration: "none", color: "black" }}><p>Login</p></Link></Button>{' '}
 
@@ -149,7 +149,7 @@ const Menu = () => {
 
               <div className="linksChoise">
 
-                <Button style={{ margin: "5px" }} variant="primary"><a href="https://www.facebook.com/" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><p>Facebook</p></a></Button>{' '}
+                {/* <Button style={{ margin: "5px" }} variant="primary"><a href="https://www.facebook.com/" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><p>Facebook</p></a></Button>{' '} */}
 
                 {/* <Button style={{ margin: "5px" }} variant="outline-success"><Link to="/Login" style={{ textDecoration: "none", color: "black" }}><p>Login</p></Link></Button>{' '} */}
 
