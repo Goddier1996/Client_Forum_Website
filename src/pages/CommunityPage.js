@@ -28,6 +28,7 @@ const CommunityPage = () => {
     let { id } = useParams();
     let Category_code = id;
 
+    let userData = JSON.parse(sessionStorage.getItem("user"));
 
 
 
@@ -120,159 +121,324 @@ const CommunityPage = () => {
 
 
 
+    // if user connect can add a new topic , else hide a button add topic
+    if (userData != null) {
 
-    return (
+        return (
 
-        <div className="posts-table">
+            <div className="posts-table">
 
-            {titleCategory.map(title =>
+                {titleCategory.map(title =>
 
-                <div className="titlePageCommunity">
-                    <p>
-                        <NavLink to={`/`}>
-                            <img src={require("../images/hhh.png").default}
-                                style={{ margin: "5px", paddingBottom: "4px" }}
-                                width="auto"
-                                height="37"
-                                alt="Profile"
-                            />
-                        </NavLink>
-
-                        Community Page {'> '}
-
-                        {title.Name_category}
-                    </p>
-
-                    <Button variant="success" size="sm"
-                        onClick={handleShow}
-                        style={{ textDecoration: "none", color: "white" }}>
-                        Add New Cluster
-                    </Button>
-                </div>
-            )}
-
-
-            <Modal show={show} onHide={handleClose} animation={true} size="lg"
-                aria-labelledby="contained-modal-title-vcenter"
-                centered
-            >
-
-                <section className="window">
-
-                    <div className="boxWin image">
-
-                        <div className="imageTopicAdd">
-
-                            <Form >
-                                <Form.Text className="text-muted1">
-                                    <p>Create new Topic</p>
-                                </Form.Text>
-                                <br></br>
-                            </Form>
-                        </div>
-                    </div>
-
-
-
-                    <div className="boxWin contectWin">
-
-                        <div className="AddTopicPop">
-
-                            <label for="fname" style={{ fontFamily: "Verdana" }}>Topic Title :</label><br />
-                            <input type="text"
-                                required
-                                placeholder="Title"
-                                value={TopicTitle}
-                                onChange={(event) => setTopicTitle(event.target.value)}
-                            />
-
-                            <br></br>
-
-                            <label for="fname" style={{ fontFamily: "Verdana" }}>Write Post :</label><br />
-                            <textarea type="text"
-                                required
-                                placeholder="Post"
-                                value={TopicText}
-                                onChange={(event) => setTopicText(event.target.value)}
-
-                            />
-
-                            <br></br>
-
-
-                            <Button variant="success" type="addTopic" onClick={checkTopic} >
-                                Add New Topic
-                            </Button>
-
-                            <Button variant="danger" onClick={handleClose}>
-                                Close
-                            </Button>
-
-                        </div>
-                    </div>
-                </section>
-            </Modal>
-
-
-
-            <div className="table-head">
-                <div className="status">Users</div>
-                <div className="subjects">Topics</div>
-                <div className="replies">Replies</div>
-                <div className="last-reply">Date Publish</div>
-            </div>
-
-
-
-            {
-                topics.map(topic =>
-
-                    <div className="table-row">
-
-                        <div className="status">
-                            <img
-                                src={topic.Photo}
-                                alt="Profile" />
-                        </div>
-
-                        <div className="subjects">
-
-                            <NavLink to=
-                                {`/MessagePage/${topic.Serial_code}`}
-                                style={{ textDecoration: "none", color: "green", fontSize: "15px" }}>
-                                {topic.Topic_title}
+                    <div className="titlePageCommunity">
+                        <p>
+                            <NavLink to={`/`}>
+                                <img src={require("../images/hhh.png").default}
+                                    style={{ margin: "5px", paddingBottom: "4px" }}
+                                    width="auto"
+                                    height="37"
+                                    alt="Profile"
+                                />
                             </NavLink>
-                            <br />
 
-                            <span
-                                style={{ textDecoration: "none", color: "black", fontSize: "13px" }}>
-                                Started by
-                                <b> {topic.First_name} {topic.Last_name}</b>
-                            </span>
+                            Community Page {'> '}
+
+                            {title.Name_category}
+                        </p>
+
+                        <Button variant="success" size="sm"
+                            onClick={handleShow}
+                            style={{ textDecoration: "none", color: "white" }}>
+                            Add New Cluster
+                        </Button>
+                    </div>
+                )}
+
+
+                <Modal show={show} onHide={handleClose} animation={true} size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered
+                >
+
+                    <section className="window">
+
+                        <div className="boxWin image">
+
+                            <div className="imageTopicAdd">
+
+                                <Form >
+                                    <Form.Text className="text-muted1">
+                                        <p>Create new Topic</p>
+                                    </Form.Text>
+                                    <br></br>
+                                </Form>
+                            </div>
                         </div>
 
-                        <div className="replies">
-                            {topic.Count_Comments}
-                        </div>
 
-                        <div className="datePublish">
-                            {topic.Date_published}
+
+                        <div className="boxWin contectWin">
+
+                            <div className="AddTopicPop">
+
+                                <label for="fname" style={{ fontFamily: "Verdana" }}>Topic Title :</label><br />
+                                <input type="text"
+                                    required
+                                    placeholder="Title"
+                                    value={TopicTitle}
+                                    onChange={(event) => setTopicTitle(event.target.value)}
+                                />
+
+                                <br></br>
+
+                                <label for="fname" style={{ fontFamily: "Verdana" }}>Write Post :</label><br />
+                                <textarea type="text"
+                                    required
+                                    placeholder="Post"
+                                    value={TopicText}
+                                    onChange={(event) => setTopicText(event.target.value)}
+
+                                />
+
+                                <br></br>
+
+
+                                <Button variant="success" type="addTopic" onClick={checkTopic} >
+                                    Add New Topic
+                                </Button>
+
+                                <Button variant="danger" onClick={handleClose}>
+                                    Close
+                                </Button>
+
+                            </div>
                         </div>
+                    </section>
+                </Modal>
+
+
+
+                <div className="table-head">
+                    <div className="status usersS">Users</div>
+                    <div className="subjects topicsS">Topics</div>
+                    <div className="replies repliesS">Replies</div>
+                    <div className="last-reply">Date Publish</div>
+                </div>
+
+
+
+                {
+                    topics.map(topic =>
+
+                        <div className="table-row">
+
+                            <div className="status">
+                                <img
+                                    src={topic.Photo}
+                                    alt="Profile" />
+                            </div>
+
+                            <div className="subjects">
+
+                                <NavLink to=
+                                    {`/MessagePage/${topic.Serial_code}`}
+                                    style={{ textDecoration: "none", color: "green", fontSize: "15px" }}>
+                                    {topic.Topic_title}
+                                </NavLink>
+                                <br />
+
+                                <span
+                                    style={{ textDecoration: "none", color: "black", fontSize: "13px" }}>
+                                    Started by
+                                    <b> {topic.First_name} {topic.Last_name}</b>
+                                </span>
+                            </div>
+
+                            <div className="replies">
+                                {topic.Count_Comments}
+                            </div>
+
+                            <div className="datePublish">
+                                {topic.Date_published}
+                            </div>
+
+                        </div>
+                    )
+
+                }
+
+
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+
+
+            </div >
+        );
+    }
+
+
+
+    else {
+
+        return (
+
+            <div className="posts-table">
+
+                {titleCategory.map(title =>
+
+                    <div className="titlePageCommunity">
+                        <p>
+                            <NavLink to={`/`}>
+                                <img src={require("../images/hhh.png").default}
+                                    style={{ margin: "5px", paddingBottom: "4px" }}
+                                    width="auto"
+                                    height="37"
+                                    alt="Profile"
+                                />
+                            </NavLink>
+
+                            Community Page {'> '}
+
+                            {title.Name_category}
+                        </p>
+
+                        {/* <Button variant="success" size="sm"
+                            onClick={handleShow}
+                            style={{ textDecoration: "none", color: "white" }}>
+                            Add New Cluster
+                        </Button> */}
+
+                        {/* <h4 style={{ fontSize: "12px", textAlign: "center", color: "rgb(97, 89, 89)" }}>Sign In and can add Topic</h4> */}
 
                     </div>
-                )
-
-            }
+                )}
 
 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+                <Modal show={show} onHide={handleClose} animation={true} size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered
+                >
+
+                    <section className="window">
+
+                        <div className="boxWin image">
+
+                            <div className="imageTopicAdd">
+
+                                <Form >
+                                    <Form.Text className="text-muted1">
+                                        <p>Create new Topic</p>
+                                    </Form.Text>
+                                    <br></br>
+                                </Form>
+                            </div>
+                        </div>
 
 
-        </div >
-    );
+
+                        <div className="boxWin contectWin">
+
+                            <div className="AddTopicPop">
+
+                                <label for="fname" style={{ fontFamily: "Verdana" }}>Topic Title :</label><br />
+                                <input type="text"
+                                    required
+                                    placeholder="Title"
+                                    value={TopicTitle}
+                                    onChange={(event) => setTopicTitle(event.target.value)}
+                                />
+
+                                <br></br>
+
+                                <label for="fname" style={{ fontFamily: "Verdana" }}>Write Post :</label><br />
+                                <textarea type="text"
+                                    required
+                                    placeholder="Post"
+                                    value={TopicText}
+                                    onChange={(event) => setTopicText(event.target.value)}
+
+                                />
+
+                                <br></br>
+
+
+                                <Button variant="success" type="addTopic" onClick={checkTopic} >
+                                    Add New Topic
+                                </Button>
+
+                                <Button variant="danger" onClick={handleClose}>
+                                    Close
+                                </Button>
+
+                            </div>
+                        </div>
+                    </section>
+                </Modal>
+
+
+
+                <div className="table-head">
+                    <div className="status usersS">Users</div>
+                    <div className="subjects topicsS">Topics</div>
+                    <div className="replies repliesS">Replies</div>
+                    <div className="last-reply">Date Publish</div>
+                </div>
+
+
+
+                {
+                    topics.map(topic =>
+
+                        <div className="table-row">
+
+                            <div className="status">
+                                <img
+                                    src={topic.Photo}
+                                    alt="Profile" />
+                            </div>
+
+                            <div className="subjects">
+
+                                <NavLink to=
+                                    {`/MessagePage/${topic.Serial_code}`}
+                                    style={{ textDecoration: "none", color: "green", fontSize: "15px" }}>
+                                    {topic.Topic_title}
+                                </NavLink>
+                                <br />
+
+                                <span
+                                    style={{ textDecoration: "none", color: "black", fontSize: "13px" }}>
+                                    Started by
+                                    <b> {topic.First_name} {topic.Last_name}</b>
+                                </span>
+                            </div>
+
+                            <div className="replies">
+                                {topic.Count_Comments}
+                            </div>
+
+                            <div className="datePublish">
+                                {topic.Date_published}
+                            </div>
+
+                        </div>
+                    )
+
+                }
+
+
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+
+
+            </div >
+        );
+    }
+
 }
 
 export default CommunityPage;

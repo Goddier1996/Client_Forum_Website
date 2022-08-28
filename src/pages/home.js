@@ -70,11 +70,11 @@ const Home = () => {
                     borderRadius: "8px 0px",
                     top: "0px",
                     left: "0px",
-                    fontSize: "25px",
+                    fontSize: "20px",
                     borderBottom: "2px solid #fff",
                     borderRight: "2px solid #fff",
                     position: "absolute",
-                    padding: "4px",
+                    padding: "6px",
                     textShadow: "1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000",
                   }}
                 >{category.Name_category}</NavLink>

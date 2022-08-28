@@ -503,9 +503,19 @@ Button {
 @media(max-width:991px) {
 
     .titlePageCommunity {
-        height: 85px;
+        height: 70px;
         text-align: center;
         align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .usersS,
+    .topicsS,
+    .repliesS {
+        align-items: center;
+        text-align: center;
         display: flex;
         justify-content: center;
     }
@@ -519,7 +529,8 @@ Button {
     } */
 
     .titlePageMessage {
-        height: 85px;
+        height: 60px;
+        text-align: center;
     }
 
     .titlePageMessage p {
@@ -527,9 +538,9 @@ Button {
     }
 
     .titlePageCommunity button {
-        font-size: 13px;
+        font-size: 12px;
         margin-bottom: 35px;
-        height: 60px;
+        height: auto;
     }
 
     .content {

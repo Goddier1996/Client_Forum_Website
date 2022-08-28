@@ -24,10 +24,9 @@ html::-webkit-scrollbar-thumb {
 
 
 .StyleCarousel img {
-    margin-top: -8px;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 450px;
+    height: 370px;
     width: 100%;
     object-fit: cover;
 }
@@ -38,20 +37,22 @@ html::-webkit-scrollbar-thumb {
 .NEWS1 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 5%;
+    justify-content: space-around;
+    padding: 6%;
+    width: 100%;
 }
 
 
 .NEWScard {
-    width: 90%;
+    width: 100%;
     display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
 .NEWScard img {
     width: 600px;
-    height: 150px;
+    height: 100px;
     border-radius: 1%;
     object-fit: cover;
     background-size: cover;

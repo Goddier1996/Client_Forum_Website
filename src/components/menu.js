@@ -106,7 +106,7 @@ const Menu = () => {
             </Nav>
 
 
-            <Form className="d-flex">
+            {/* <Form className="d-flex">
               <img
                 src={require("../images/user1.png").default}
                 width="36"
@@ -115,7 +115,7 @@ const Menu = () => {
                 alt="Profile"
                 onClick={checkProfile}
               />
-            </Form>
+            </Form> */}
 
           </Navbar.Collapse>
         </Navbar>
