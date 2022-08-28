@@ -503,7 +503,7 @@ Button {
 @media(max-width:991px) {
 
     .titlePageCommunity {
-        height: 70px;
+        height: 80px;
         text-align: center;
         align-items: center;
         display: flex;
@@ -529,7 +529,7 @@ Button {
     } */
 
     .titlePageMessage {
-        height: 60px;
+        height: auto;
         text-align: center;
     }
 
