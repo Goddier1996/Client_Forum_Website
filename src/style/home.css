@@ -1,3 +1,28 @@
+/* desgin scroll in web */
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: #00000082;
+border: 3px solid white;
+}
+
+
+
+
+
+
+
+
 .StyleCarousel img {
     margin-top: -8px;
     background-size: cover;
