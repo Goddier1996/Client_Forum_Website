@@ -26,7 +26,7 @@ html::-webkit-scrollbar-thumb {
 .StyleCarousel img {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 370px;
+    height: 350px;
     width: 100%;
     object-fit: cover;
 }
@@ -37,8 +37,8 @@ html::-webkit-scrollbar-thumb {
 .NEWS1 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 6%;
+    justify-content: space-evenly;
+    padding: 5%;
     width: 100%;
 }
 
@@ -52,12 +52,13 @@ html::-webkit-scrollbar-thumb {
 
 .NEWScard img {
     width: 600px;
-    height: 100px;
+    height: 85px;
     border-radius: 1%;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 .NEWScard {
     position: relative;

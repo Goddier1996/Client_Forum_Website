@@ -47,11 +47,13 @@ const Home = () => {
       <div className="StyleCarousel">
         <img
           className="d-block w-100"
-          src={require("../images/homeee.png").default}
+          src={require("../images/2.jpg").default}
         />
       </div>
 
       <br></br>
+
+
 
       <CardColumns>
 

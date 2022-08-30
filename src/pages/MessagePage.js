@@ -15,7 +15,7 @@ const MessagePage = () => {
     const [topics, SetTopics] = useState([])//הצגת כותרת 
     const [comments, SetComments] = useState([]) //הצגת תגובות
     const [comment, SetComment] = useState('') //הוספת תגובה
-    
+
 
 
     let { id } = useParams();
@@ -99,7 +99,7 @@ const MessagePage = () => {
             window.location.reload(false); // רענון דף
             let data = await res.json()
             console.log(data)
-            
+
         } catch (error) {
             console.log(error)
         }
@@ -152,12 +152,12 @@ const MessagePage = () => {
                     <div className="head">
 
                         <div className="authors">Author</div>
-                        <div className="content">Topic: random topic</div>
+                        <div className="content">Message</div>
 
                     </div>
 
 
-                 
+
                     {topics.map(topic =>
                         <div className="body">
 
@@ -168,7 +168,7 @@ const MessagePage = () => {
                                 </NavLink>
 
                                 <div className="username"
-                                    style={{ textDecoration: "none", color: "#28a745", fontSize: "17px" }}>
+                                    style={{ textDecoration: "none", color: "#28a745", fontSize: "14px" }}>
                                     {topic.First_name} {topic.Last_name}, {topic.City}</div>
 
                                 <div className="date"
@@ -198,7 +198,7 @@ const MessagePage = () => {
                                     <img src={comment.Photo} alt="" height="140px" width="110" />
                                 </NavLink>
                                 <div className="username"
-                                    style={{ textDecoration: "none", color: "#6b6b6b", fontSize: "15px" }}>
+                                    style={{ textDecoration: "none", color: "#6b6b6b", fontSize: "14px" }}>
                                     {comment.First_name} {comment.Last_name}, {comment.City} </div>
 
                                 <div className="date">Date Publish: <p>{comment.Date_published}</p></div>
@@ -212,7 +212,7 @@ const MessagePage = () => {
                 )}
 
 
-             
+
 
                 <div className="comment-area hide" id="comment-area" >
                     <textarea name="comment" id="" placeholder="comment here ... "
@@ -264,7 +264,7 @@ const MessagePage = () => {
                     <div className="head">
 
                         <div className="authors">Author</div>
-                        <div className="content">Topic: random topic</div>
+                        <div className="content">Message</div>
 
                     </div>
 

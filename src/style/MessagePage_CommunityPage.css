@@ -317,7 +317,7 @@ Button {
 }
 
 .authors {
-    flex: 20%;
+    flex: 8%;
     padding-left: 2%;
     color: #6b6b6bd2;
 }
@@ -498,6 +498,11 @@ Button {
     font-size: 15px;
 }
 
+.titlePageCommunity button {
+    margin-bottom: 35px;
+    height: auto;
+}
+
 
 
 @media(max-width:991px) {
@@ -577,6 +582,11 @@ Button {
     .subjects,
     .status {
         text-align: center;
+    }
+
+    .authors {
+        flex: 27%;
+        padding-right: 3%;
     }
 }
 
