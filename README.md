@@ -1,13 +1,13 @@
-# Forum Web Side - ReactJs , NodeJs , MySql
+# Forum Website - ReactJs , NodeJs , MySql
   
-This Web side forum all people can to see Topics and comments and chiose Category what you need , and user can add new Topic or comment.
-And Admin control all data in this side.
+This Website forum all people can to see Topics and comments and to chiose Category what you need , and user can add new Topic or comment.
+And Admin control all data in this Website.
  
-Link Web Side - https://forum-all-subjects.netlify.app 
+Link Website - https://forum-all-subjects.netlify.app 
 
-Server this Web Side - https://github.com/Goddier1996/Server_web_side_forum_NodeJs
+Server this Website - https://github.com/Goddier1996/Server_web_site_forum_NodeJs
 
-I made this web side with (shelly) - https://github.com/shellyniazov
+I made this Website with (shelly) - https://github.com/shellyniazov
  
 
 # video :
