@@ -60,7 +60,7 @@ const Footer = () => {
 							/>
 						</Link>
 
-						<p className="footer-company-name">Made by Artium and Shelly © 2022</p>
+						<p className="footer-company-name">Made by Artem and Shelly © 2022</p>
 					</div>
 
 
