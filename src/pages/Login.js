@@ -138,13 +138,15 @@ const Login = () => {
       // אם המשתמש לא מחובר - ניתן לבצע התחברות - לפי סוג משתמש
       if (data.UserType_code == 1) { // מעבר לדף פרופיל של משתמש ספציפי
         sessionStorage.setItem("user", JSON.stringify(data))
-        history.push(`/Profile/${data.User_code}`);
+        // history.push(`/Profile/${data.User_code}`);
+        history.push(`/`);
         window.location.reload(false); // רענון דף
       }
 
       if (data.UserType_code == 2) { // מעבר לדף מנהל האתר
         sessionStorage.setItem("user", JSON.stringify(data))
-        history.push(`/Admin/${data.User_code}`);
+        // history.push(`/Admin/${data.User_code}`);
+        history.push(`/`);
         window.location.reload(false);
       }
 
@@ -203,7 +205,8 @@ const Login = () => {
       // אם המשתמש לא מחובר - ניתן לבצע התחברות - לפי סוג משתמש
       if (data.UserType_code == 1) { // מעבר לדף פרופיל של משתמש ספציפי
         sessionStorage.setItem("user", JSON.stringify(data))
-        history.push(`/Profile/${data.User_code}`);
+        // history.push(`/Profile/${data.User_code}`);
+        history.push(`/`);
         window.location.reload(false); // רענון דף
       }
 
