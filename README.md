@@ -1,5 +1,5 @@
-# Forum Website - ReactJs , NodeJs , MySql  
-  
+# Forum Website - ReactJs , NodeJs , Microsoft SQL Server  
+   
 This Website forum all people can to see Topics and comments and to chiose Category what you need , and user can add new Topic or comment.
 And Admin control all data in this Website.
  
@@ -10,7 +10,7 @@ Server this Website - https://github.com/Goddier1996/Server_web_site_forum_NodeJ
 I made this Website with (shelly) - https://github.com/shellyniazov
  
 
-# video :
+# video : 
 
 https://user-images.githubusercontent.com/59862302/179351305-20180069-839f-41b0-9ad7-8c69b18696a6.mp4
 
