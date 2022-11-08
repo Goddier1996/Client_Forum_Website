@@ -71,16 +71,34 @@ html::-webkit-scrollbar-thumb {
 }
 
 
+
+
+/* swal style popup */
+.swal2-container.swal2-center>.swal2-popup {
+    border-radius: 20%;
+}
+
+
 .popUpHome h1 {
-    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    color: rgb(0, 0, 0);
     font-size: 28px;
-    font-weight: bold;
 }
 
 .popUpHome p {
-    color: rgba(255, 255, 255, 0.908);
-    font-size: 13px;
+    color: rgba(0, 0, 0, 0.908);
+    font-size: 16px;
 }
+
+
+.popUpHome a {
+    text-decoration: none;
+    color: #28a745;
+    font-size: 17px;
+    border: 3px solid white;
+}
+
+
 
 .popUpHome img {
     border-radius: 20%;
