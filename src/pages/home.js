@@ -32,7 +32,7 @@ const Home = () => {
       // background: 'none',
       showConfirmButton: false,
       // timer: 15000,
-      html: '<div class="popUpHome"> <h1>Welcome to Community Forum<h1> <p>( Replacement Service Work for a New Server )<br/><br/>Can See This Project in GitHub : <a href="https://github.com/Goddier1996/Client_Forum_Website">Click To See</a></p>  <img src="https://i.pinimg.com/originals/e3/1b/75/e31b752875679b64fce009922f9f0dda.gif"> </div>'
+      html: '<div class="popUpHome"> <h1>Welcome to Community Forum<h1> <p>( Replacement Service Work for a New Server )<br/><br/>Can See This Project in GitHub :<br/><br/> <a href="https://github.com/Goddier1996/Client_Forum_Website">Click To See</a></p>  <img src="https://i.pinimg.com/originals/e3/1b/75/e31b752875679b64fce009922f9f0dda.gif"> </div>'
     })
 
   }, [])
