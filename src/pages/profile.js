@@ -269,21 +269,21 @@ const Profile = () => {
 
         return (
 
-            <div class="main-body">
+            <div className="main-body">
 
                 <div className="titlePageProfile">
                     <p>Welcome To Your Profile Page <span> - Here you can control and see your Info</span></p>
                     <Button variant="danger" size="sm" onClick={clearAll}>Log out</Button>
                 </div>
 
-                <div class="row gutters-sm">
+                <div className="row gutters-sm">
 
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex flex-column align-items-center text-center">
-                                    <img src={user.Photo} alt="Admin" class="rounded-circle" width="150" />
-                                    <div class="mt-3">
+                    <div className="col-md-4 mb-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <div className="d-flex flex-column align-items-center text-center">
+                                    <img src={user.Photo} alt="Admin" className="rounded-circle" width="150" />
+                                    <div className="mt-3">
                                         <h4>Hi {user.First_name}</h4>
                                         <Button className="adminBtn" variant="info" size="sm" onClick={checkAdmin}>To Admin Page</Button>
                                     </div>
@@ -292,57 +292,57 @@ const Profile = () => {
                         </div>
                     </div>
 
-                    <div class="col-md-8">
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Full Name</h6>
+                    <div className="col-md-8">
+                        <div className="card mb-3">
+                            <div className="card-body">
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">Full Name</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.First_name} {user.Last_name}
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Email</h6>
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">Email</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.Email}
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Birthday</h6>
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">Birthday</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.Birthday}
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">City</h6>
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">City</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.City}
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">User ID</h6>
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">User ID</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.Id}
                                     </div>
                                 </div>
                                 <hr />
 
-                                <div class="row">
-                                    <div class="col-sm-12">
+                                <div className="row">
+                                    <div className="col-sm-12">
                                         <Button variant="info" size="sm"
                                             onClick={handleShow}
                                             style={{ textDecoration: "none", color: "white", fontSize: "16px" }}>
@@ -596,20 +596,20 @@ const Profile = () => {
 
         return (
 
-            <div class="main-body">
+            <div className="main-body">
 
                 <div className="titlePageProfile">
                     <p>Welcome To Your Profile Page <span> - Here you can control and see your Info</span></p>
                     <Button variant="danger" size="sm" onClick={clearAll}>Log out</Button>
                 </div>
 
-                <div class="row gutters-sm">
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex flex-column align-items-center text-center">
-                                    <img src={user.Photo} class="rounded-circle" width="150" />
-                                    <div class="mt-3">
+                <div className="row gutters-sm">
+                    <div className="col-md-4 mb-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <div className="d-flex flex-column align-items-center text-center">
+                                    <img src={user.Photo} className="rounded-circle" width="150" />
+                                    <div className="mt-3">
                                         <h4>Hi {user.First_name}</h4>
                                     </div>
                                 </div>
@@ -617,57 +617,57 @@ const Profile = () => {
                         </div>
                     </div>
 
-                    <div class="col-md-8">
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Full Name</h6>
+                    <div className="col-md-8">
+                        <div className="card mb-3">
+                            <div className="card-body">
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">Full Name</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.First_name} {user.Last_name}
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Email</h6>
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">Email</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.Email}
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Birthday</h6>
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">Birthday</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.Birthday}
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">City</h6>
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">City</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.City}
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">User ID</h6>
+                                <div className="row">
+                                    <div className="col-sm-3">
+                                        <h6 className="mb-0">User ID</h6>
                                     </div>
-                                    <div class="col-sm-9 text-secondary">
+                                    <div className="col-sm-9 text-secondary">
                                         {user.Id}
                                     </div>
                                 </div>
                                 <hr />
 
-                                <div class="row">
-                                    <div class="col-sm-12">
+                                <div className="row">
+                                    <div className="col-sm-12">
                                         <Button variant="info" size="sm"
                                             onClick={handleShow}
                                             style={{ textDecoration: "none", color: "white", fontSize: "16px" }}>
